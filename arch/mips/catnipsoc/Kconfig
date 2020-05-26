@@ -1,0 +1,13 @@
+if MACH_CATNIPSOC
+
+choice
+	prompt "Machine type"
+	depends on MACH_CATNIPSOC
+	default CATNIPSOC_NEXYSA7
+
+config CATNIPSOC_NEXYSA7
+	bool "NexysA7 by Digilent"
+
+endchoice
+
+endif
